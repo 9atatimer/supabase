@@ -14,10 +14,10 @@ export default defineConfig({
   forbidOnly: IS_CI,
   retries: IS_CI ? 3 : 0,
   use: {
-    baseURL: env.STUDIO_URL,
+    baseURL: 'http://localhost:8082',
     screenshot: 'off',
     video: 'retain-on-failure',
-    headless: IS_CI,
+    headless: true,
     trace: 'retain-on-failure',
     permissions: ['clipboard-read', 'clipboard-write'],
   },

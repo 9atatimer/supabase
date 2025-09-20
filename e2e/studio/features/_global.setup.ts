@@ -29,7 +29,7 @@ setup('Global Setup', async ({ page }) => {
    * Studio Check
    */
 
-  const studioUrl = env.STUDIO_URL
+  const studioUrl = 'http://localhost:8082'
   const apiUrl = env.API_URL
 
   await page.goto(studioUrl).catch((err) => {
