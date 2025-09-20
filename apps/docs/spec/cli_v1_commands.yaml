@@ -116,6 +116,22 @@ commands:
         name: --project-ref <string>
         description: Project ref of the Supabase project.
         default_value: ''
+      - id: output
+        name: -o, --output <[ json ]>
+        description: Output format of the secret list.
+        default_value: ''
+        accepted_values:
+          - id: json
+            name: json
+            type: '[ json ]'
+      - id: output
+        name: -o, --output <[ json ]>
+        description: Output format of the function list.
+        default_value: ''
+        accepted_values:
+          - id: json
+            name: json
+            type: '[ json ]'
   - id: supabase-vanity-subdomains-delete
     title: supabase vanity-subdomains delete
     summary: Deletes a project's vanity subdomain
